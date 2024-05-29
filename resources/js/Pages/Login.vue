@@ -15,8 +15,8 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 <template>
 <GuestLayout>
-    <div class="dark:bg-black dark:text-white">
-    <section class="min-h-screen content-center   text-green-600  dark:bg-gray-900">
+    <div class="dark:bg-black dark:text-white ">
+    <section class="min-h-screen content-center   text-success dark:bg-gray-900">
 
         <div class="mx-auto md:px-9 max-w-screen-xl g:grid-cols-12 lg:gap-20 lg:py-10">
             <a href="#"
