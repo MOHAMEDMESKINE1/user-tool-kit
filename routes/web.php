@@ -9,7 +9,11 @@ Route::get('/', fn() => Inertia::render('Login'));
 
 Route::get('/otp', fn() => Inertia::render('Otp'));
 
+Route::get('/appcard', fn() => Inertia::render('AppCard'));
+
 Route::get('/authorize', fn() => Inertia::render('Authorize'));
+
+Route::get('/sessions', fn() => Inertia::render('BrowserSession'));
 
 Route::get('/dashboard', fn() => Inertia::render('Dashboard'))->middleware(['auth', 'verified'])->name('dashboard');
 

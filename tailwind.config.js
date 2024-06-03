@@ -16,8 +16,10 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                  apptitle: ['Inknut Antiqua']
             },
             colors: {
+                "red": "#DB3414",
                 "sidebar": "#00203E",
                 "language": "#0789FF",
                 "primary":'#0056a3',

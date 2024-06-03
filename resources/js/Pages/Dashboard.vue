@@ -7,7 +7,7 @@ import { Head } from '@inertiajs/vue3';
 <template>
     <Head title="E-AGADIR Dashboard" />
 
-    <AuthenticatedLayout>
+    <AuthLayout>
         
         <!-- <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -17,5 +17,5 @@ import { Head } from '@inertiajs/vue3';
                 </div>
             </div>
         </div> -->
-    </AuthenticatedLayout>
+    </AuthLayout>
 </template>

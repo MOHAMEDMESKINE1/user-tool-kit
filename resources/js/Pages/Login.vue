@@ -43,7 +43,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         <div class="mx-auto max-w-screen-xl -mt-4 md:px-9 px-4 py-8 lg:grid lg:grid-cols-12 lg:gap-20 lg:py-16">
             <div class="col-span-7 mr-10 hidden flex-col justify-between lg:flex xl:mb-0">
                 <div>
-                    <Text  fontSize='lg' class="mb-10  text-gray-500">
+                    <Text  fontSize='md' class="mb-10  text-gray-500">
                         Sous la direction avisée de Sa Majesté le Roi Mohammed VI, les
                         efforts du Maroc ont visé à consolider une culture de
                         transformation numérique à tous les niveaux et à investir les
@@ -93,10 +93,11 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                 <Card class=" mt-5 lg:mt-0 mx-auto">
 
                     <template #header> 
-                        <div class="flex items-center pt-6 lg:mt-0 mt-7 ">
-                            <Title type="h5" class="font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-2xl">
+                        <div class="flex items-center lg:pt-6   ">
+                            <Title type="h3" class="font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-2xl">
                                 Content de te revoir
                             </Title>
+                            
                             <img class="w-7 h-7 ml-3 mr-3" src="../../../public/storage/assets/svg/emojii.svg" alt="logo" />
 
                             <Title type="h5" class="font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-2xl">!</Title>
