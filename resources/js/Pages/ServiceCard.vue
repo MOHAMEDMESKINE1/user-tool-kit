@@ -15,7 +15,7 @@ defineProps({
 
 <template>
 
-     <div :class="[`${hoverCard}`,'hover:text-white hover relative w-[388px]   group  h-[400px]  flex flex-col  border  rounded-lg bg-white dark:bg-gray-800 m-4']">
+     <div :class="[`${hoverCard}`,'cursor-pointer  duration-700 ease-out hover:duration-700 hover:text-white hover relative w-[388px]   group  h-[400px]  flex flex-col  border  rounded-lg bg-white dark:bg-gray-800 m-4']">
             <img class="absolute w-[288px] end-0 h-full " :src="src" :alt="serviceTitle" />
 
             <div class="px-5 pt-5">

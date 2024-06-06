@@ -3,6 +3,7 @@
     import SideBar from './SideBar/SideBar.vue';
     import NavBar from './NavBar.vue';
     import Button from "primevue/button"
+    import Banner from '@/Pages/Banner.vue';
 
     import {
         ref
@@ -25,7 +26,11 @@
 </script>
 
 <template>
-    <section class="flex min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-900 start-0 pe-[70px]  ">
+    <div class="h-screen flex flex-col">
+
+ 
+    <Banner text="Activer la sécurité Nécessaire" class="flex-none"/>
+    <section class="flex flex-1 bg-gray-50   overflow-hidden dark:bg-gray-900 start-0 pe-[70px]  relative ">
         
        
 
@@ -52,8 +57,8 @@
                     <aside
                         class="w-full h-full  overflow-y-auto  border-e border-gray-200  dark:bg-gray-800 dark:border-gray-700">
                         <div class="h-72  dark:bg-gray-800 w-full ">
-                            <div class="flex flex-col  font-medium w-full">
-
+                            <div class="flex flex-col  font-medium w-full p-10">
+                             
                                 <slot />
                             </div>
                         </div>
@@ -70,7 +75,7 @@
         <!-- tools -->
 
     </section>
-
+</div>
 </template>
 <style lang="css" scoped>
   

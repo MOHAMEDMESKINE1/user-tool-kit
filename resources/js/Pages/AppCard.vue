@@ -40,7 +40,7 @@ import ServiceCard from './ServiceCard.vue';
         <ServiceCard 
             hoverCard="hover:bg-[#04ACB7]" 
             boxIcon="bg-[#01ACB7]"
-            colorIcon="text-[#523392]"
+            colorIcon="text-[#04ACB7]"
             nameIcon="folder"
             statusColor="bg-[#00C371]" 
             borderColorStatus="group-hover:border-[#00C371]" 

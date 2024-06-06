@@ -11,6 +11,9 @@ Title
 
 } from 'vue-component-cua'
 import GuestLayout from '@/Layouts/GuestLayout.vue'
+import { ref } from 'vue';
+
+const remember = ref(false);
 </script>
 
 <template>
@@ -120,8 +123,8 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
                                 <GroupInput >
                                     <div class="flex items-start">
-                                        <CheckBox id='check1' name='remember-social' class="h-5 w-5 mr-2"  />
-                                        <Label for='remember-social' class="mx-2">Mémoriser cet appareil</Label>
+                                        <CheckBox id='check1' v-model="remember" name='remember-social' class="h-5 w-5 mr-2"  />
+                                        <Label for='check1' class="mx-2">Mémoriser cet appareil</Label>
                                     </div>
                                 </GroupInput>
 

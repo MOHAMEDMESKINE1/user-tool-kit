@@ -127,7 +127,7 @@
                         <div v-if="isLang" class="" v-click-away="handleLangClickisAway">
 
                             <div
-                                class=" z-10 absolute top-20 end-44 lg:end-[345px] bg-white divide-y divide-gray-100 rounded-lg border w-36 dark:bg-gray-700 dark:divide-gray-600">
+                                class=" z-10 absolute top-20 end-48  bg-white divide-y divide-gray-100 rounded-lg border w-36 dark:bg-gray-700 dark:divide-gray-600">
                                 <div class="text-sm font-semibold text-gray-700 dark:text-gray-200">
 
 
@@ -174,7 +174,7 @@
                 </div>
                 <Transition name="fade">
                     <div v-if="isAllApps" v-click-away="handleAllApsClickAway"
-                        class="z-10 absolute top-10 end-20 lg:end-[250px] flex flex-row bg-white justify-between m-10  h-auto w-auto shadow-sm rounded-lg border">
+                        class="z-10 absolute top-10 end-20 lg:end-15 flex flex-row bg-white justify-between m-10  h-auto w-auto shadow-sm rounded-lg border">
 
 
                         <div class=" m-1">
@@ -264,11 +264,9 @@
                         <i class="px-2 py-0.5 fa-regular fa-bell fa-lg"></i>
                     </button>
                 </div>
-
-
                 <Transition name="fade">
                     <div v-if="isNotif" v-click-away="handleNotifClickAway"
-                        class="z-20 absolute top-20 end-20 lg:end-56  w-auto lg:w-full max-w-sm max-h-lg  divide-y divide-gray-100  dark:bg-gray-800 dark:divide-gray-700 rounded-lg border dark:border-gray-700">
+                        class="z-20 absolute top-20 end-20   w-auto lg:w-full max-w-sm max-h-lg  divide-y divide-gray-100  dark:bg-gray-800 dark:divide-gray-700 rounded-lg border dark:border-gray-700">
 
 
                         <div
@@ -403,19 +401,17 @@
                             </div>
                         </a>
                     </div>
-
-
                 </Transition>
 
 
                 <!-- profile -->
-                <div class="flex pl-2 cursor-pointer"  @click="isProfileClick">
+                <div class="flex ps-2 pe-2  cursor-pointer "  @click="isProfileClick">
 
                     <div
                    
                         class="relative  flex rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <img class="h-auto w-10 rounded-md"
-                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgGCgkGBwoHBwYGBg8UFQYWIB0WIhURHxMYHSggGBolGx8fITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMgAyAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAwQFAgEH/8QANBABAQACAAMGAgYLAQAAAAAAAAIBAwQREiEiMTJSYhNyBTNTgqHBI0FCUWFxgZGSk7EU/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD6oAqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8qpic1WcYmfNVM/fxV3nOIzmY/GwXNvEa9XZVc6+znxVb4+s57kTj5u1UAWP/bu/fH+t1PHbMeM6s/d5KoC/HHRnzxc/L2rWM4zjGceFMZJp33pz3c85+zrwBrDjVsnbGKn70+h2AAAAAAAAAAAAAAABnPLGc58J7wM/j9ma2/D59kT5f4qr26zV5rPjVdTxQAAAAABZ4C8zu6OfZctFkaKzO/XnHrlroAAAAAAAAAAAAAACPfnlo2fJSRHvxz0bMeygZICgAAAAADqM9NzXpqabDFbWPBAAAAAAAAAAAAAAARb9k69ec3z5V3e6lVuPxz0Yz6bkGcAoAAAAAA9xy545+DW1XOyMXPVyr1Mhp8Hjlw8e7qr8UE4AAAAAAAAAAAAACHip6+HvHpnq/smeVOKnM58KnpoGMJeI0fAqcdXVivL3USgAAAAAA19U9GqJ9MqHDcN8bHVnPKZr/JpIAAAAAAAAAAAAAAAAKv0hHVqm8fsV/wBZ7ZqcXOZrwqemmTu151bMxnt6fLXqwDgBQAABJw+v4u3E58vmr+QL/CR0aJxnxr9JX9U4IAAAAAAAAAAAAAAAADP+kfrp+T8167iJ53Uzj3MzitmNu3qnyzPTIIgFAABa+jvrq+T81VNwuzGrdiq8tT00DUHMXFzzisVj2ukAAAAAAAAAAAAAEezdr1+e5xn0z25BI52XGueq6xjClt47OeeNU8vdStV1ddVVnOfVQGy6u81Wc573d6nIKAAAAAAOtd1F4qc5x3u90tbXcbJ6orGcMd1N1FdU1nGfVKDYFDVx2ccsbZ5+6VvXu17PJc5z6a7MgkAAAAAABDxO74Mc8dt13YkHW3dGrHO6+WZ8aVL4+s/VxOPds7VWqq6zVZznNeaqeAkviNt+a88vTPYjBQAAAAAAAAAAAAABJHEbY8t55emu1PHH1j6yJz7tfYqANbVujbjnFfNNeMpGNNVFYqc5xmfLUtPht3xo557Lnu3KCYABm8dWa35x+qJmQBXAUAAAAAAAAAAAAAAAAAAFjgazO/GP1XNSCDSAB//Z"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
                             alt="">
                         <span
                             class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
@@ -423,62 +419,76 @@
 
                 </div>
 
-                <div  class="pl-3 flex-col hidden lg:flex justify-center ">
+                <div @click="isProfileClick"  class=" flex-col hidden cursor-pointer lg:flex justify-center ">
 
-                    <span class="text-xs text-gray-800  dark:text-white font-semibold">Mohamed Ali</span>
-                    <span class="text-xs text-gray-400 ">m.ali@company.ma</span>
-
+                 
                 </div>
 
-                <i @click="isProfileClick" :class='[chevronClass," text-lg  cursor-pointer  font-bold  dark:text-white p-3 lg:flex hidden"]'></i>
 
                 <Transition name="fade">
-                <div
-                v-if="isProfile"
-                v-click-away="handleProfileClicksAway"
-                class="z-10 absolute top-20 end-5 bg-white truncate divide-gray-100 rounded-lg shadow w-[224px] dark:bg-gray-700 dark:divide-gray-600">
-
-                <div
-                    class="py-1 px-5 flex flex-row items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <a href="#" class=" px-4 py-2 text-sm text-gray-700 ">First Action</a>
-                </div>
-
-                <div
-                    class="py-1 px-5 flex flex-row items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    <i class="fa-solid fa-inbox"></i>
-                    <a href="#"
-                        class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Second
-                        Action</a>
-                </div>
+                    <div
+                        v-if="isProfile"
+                        v-click-away="handleProfileClicksAway"
+                    class="z-10 absolute top-20 bg-white truncate end-12 lg:end-5  divide-gray-100 rounded-lg shadow w-[224px] dark:bg-gray-700 dark:divide-gray-600">
 
 
-                <div
-                    class="py-1 px-5 flex flex-row items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <a href="#"
-                        class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Third
-                        Action</a>
-                </div>
+                    <div class="flex w-full items-center  py-3">
 
-                <div
-                    class="py-1 px-5 flex flex-row items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <a href="#"
-                        class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Fourth
-                        Action</a>
-                </div>
+                        <div class="flex ps-2 pe-2">
 
-                <div
-                    class="py-1 bg-green px-5 flex flex-row items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white text-red-500 border-t">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <a href="#"
-                        class=" px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                        out</a>
-                </div>
-                </div>
+                            <div
+                                class="relative  rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                <img class="h-auto w-10 rounded-md"
+                                    src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+                                    alt="">
+                                <span
+                                    class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col">
+
+                            <h3 class="text-gray-500 font-medium text-[15px]">Mohamed Ali</h3>
+
+                            <h3 class="text-gray-400 font-medium text-[12px]">m.ali@company.ma</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex h-px  w-full bg-gray-200 dark:bg-gray-700"></div>
+
+
+                    <div
+                        class="my-1 mx-1 py-3 px-4  text-gray-600 bg-gray-100  rounded-xl  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#"
+                            class="ps-3 text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Account
+                            settings</a>
+                    </div>
+
+
+                    <div
+                        class="my-1 mx-1 py-3 px-4  text-gray-600 hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                        <i class="fa-solid fa-folder"></i>
+                        <a href="#"
+                            class="ps-3  text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Workspace</a>
+                    </div>
+
+
+                    <div class="flex h-px  w-full bg-gray-200 dark:bg-gray-700"></div>
+                    <div
+                        class="my-1 mx-1 py-3 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl dark:text-gray-200 dark:hover:text-white text-gray-600">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a href="#"
+                            class="ps-3 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                            out</a>
+                    </div>
+                    </div>
+
                 </Transition>
-
+                <!--  profile   -->
             </div>
 
            

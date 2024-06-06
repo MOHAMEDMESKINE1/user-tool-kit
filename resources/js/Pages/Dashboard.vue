@@ -2,11 +2,12 @@
 import AuthLayout from '@/Layouts/AuthLayout.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+
 </script>
 
 <template>
     <Head title="E-AGADIR Dashboard" />
-
+   
     <AuthLayout>
         
         <!-- <div class="py-12">

@@ -2,7 +2,7 @@
 
 <template>
 
-    <aside id="logo-sidebar" class="h-screen lg:flex" aria-label="Sidebar">
+    <aside id="logo-sidebar" class="h-full lg:flex" aria-label="Sidebar">
 
 
        
@@ -12,7 +12,7 @@
 
 
                         <a href="" class="flex-none content-center py-3 w-10 lg:w-16 pt-9">
-                            <img src="../../../../../public/storage/assets/svg/logo.svg" alt="logo" />
+                            <img src="../../../../../public/storage/assets/svg/logo_white.svg" alt="logo" />
                         </a>
                         <header>
                             <slot name="top"></slot>

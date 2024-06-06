@@ -15,6 +15,14 @@ Route::get('/authorize', fn() => Inertia::render('Authorize'));
 
 Route::get('/sessions', fn() => Inertia::render('BrowserSession'));
 
+Route::get('/test', fn() => Inertia::render('Test'));
+
+Route::get('/email', fn() => Inertia::render('EmailVerification'));
+
+Route::get('/phone', fn() => Inertia::render('PhoneVerification'));
+
+Route::get('/dashboard_page', fn() => Inertia::render('DashboardPage'));
+
 Route::get('/dashboard', fn() => Inertia::render('Dashboard'))->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

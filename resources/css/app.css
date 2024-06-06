@@ -28,3 +28,8 @@
     background: black;
 
 }
+
+html[dir=rtl] .fa-chevron-left,
+html[dir=rtl] .fa-chevron-right{
+    rotate: 180deg;
+}

@@ -1,19 +1,44 @@
 <script setup>
-import {ListGroup,Title,Text ,Badge,ListGroupItem ,ButtonLink} from 'vue-component-cua'
-
+import {
+    ListGroup,
+    Title,
+    Text ,
+    Badge,
+    ListGroupItem ,
+    ButtonLink,
+    BreadCrumb, 
+    BreadCrumbItem
+} from 'vue-component-cua'
+import AuthLayout from '@/Layouts/AuthLayout.vue';
 </script>
 
 <template>
-    <div class="px-6 lg:px-24 h-screen justify-center flex flex-col ">
+    <AuthLayout>
+
+
+    <div class=" flex flex-col ">
+            <div class="flex justify-between ">
+                <Title type="h5" class="mb-2 font-bold">
+                    Utilisateurs
+                </Title>  
+            </div>
+            <!-- breadcrumbs -->
+            <div class=" mb-4">
+                <BreadCrumb>
+                    <BreadCrumbItem title='Acceuil' icon='pi-home' href='/' />
+                    <BreadCrumbItem title='Roles et Utilsateurs' href='/' />
+                    <BreadCrumbItem title='Utilsateurs'  href='/' :last="true" />
+                </BreadCrumb>
+            </div>
             <!-- Trusted Browser  -->
             <div class="grid  grid-cols-1 lg:grid-cols-2 ">
 
+              
                 <div>
-                    <Title type="h5" class="mb-3 font-bold" >Trusted Browser</Title>
+                    <Title type="h6" class="mb-3 font-bold" >Trusted Browser</Title>
                     <Text fontSize="sm" class="mb-3">Most Jetstream features can be customized via action classes. However, for security, Jetstream's browser session services.</Text>
                 </div>
                 <div>
-                    <Text>Laravel Jetstream's security features are accessed by the user using the top-right user profile navigation dropdown menu. Within this dashboard, Jetstream scaffolds views that allow the user to view the browser sessions associated with their account. In addition, the user may "logout" browser sessions other than the one being used by the device they are currently using.</Text>
                     <div class="bg-white mt-5">
                         <ListGroup>
                             
@@ -29,10 +54,7 @@ import {ListGroup,Title,Text ,Badge,ListGroupItem ,ButtonLink} from 'vue-compone
                                         </div>
                                         
                                     </div>
-                                
-                                    <!-- <Text fontSize="sm" class="text-error pt-1">
-                                        Logout
-                                    </Text> -->
+                                                                   
                                     <ButtonLink color='error' >Logout</ButtonLink>
 
                                 </div>
@@ -80,11 +102,10 @@ import {ListGroup,Title,Text ,Badge,ListGroupItem ,ButtonLink} from 'vue-compone
             <div class="grid grid-cols-1 lg:grid-cols-2 mt-12  ">
 
                 <div class="">
-                    <Title type="h5" class="mb-3 font-bold" >Mes Sessions</Title>
+                    <Title type="h6" class="mb-3 font-bold" >Mes Sessions</Title>
                     <Text fontSize="sm" class="mb-3" >Most Jetstream features can be customized via action classes. However, for security, Jetstream's browser session services.</Text>
                 </div>
                 <div>
-                    <Text>Laravel Jetstream's security features are accessed by the user using the top-right user profile navigation dropdown menu. Within this dashboard, Jetstream scaffolds views that allow the user to view the browser sessions associated with their account. In addition, the user may "logout" browser sessions other than the one being used by the device they are currently using.</Text>
                     <div class="bg-white mt-5">
                         <ListGroup >
                             
@@ -144,6 +165,7 @@ import {ListGroup,Title,Text ,Badge,ListGroupItem ,ButtonLink} from 'vue-compone
                 </div>
            </div>
     </div>
+</AuthLayout>
 </template>
 
 
