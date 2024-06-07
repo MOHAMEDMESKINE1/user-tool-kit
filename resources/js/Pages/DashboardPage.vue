@@ -4,6 +4,7 @@
         ref
     } from 'vue';
     import {
+        Avatar,
         ListGroup,
         Title,
         Text,
@@ -220,22 +221,25 @@
                     </ul>
                 </template>
             </DropDownButton>
-            <template #column1='{ entity }'>
-                <div class="flex w-full items-center  ">
+            <template #column1='{entity  }'>
+                <div class="flex  items-center  ">
 
-                    <div class="flex ps-2 pe-2">
+                    <div class="  pe-2">
 
                         <div
-                            class="relative  rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <img class="h-auto  w-10 rounded-lg"
+                            class=" relative     text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                            <Avatar type="img"  rounded="full" class="  w-12 "
                                 src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-                                alt="">
-                            <span
-                                class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                alt=""/>
                         </div>
 
+                        <!-- <div
+                            class=" relative     text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                            <Avatar  text="MESKINE MOHAMED " rounded="full" class="h-10  w-10 " />
+                        </div> -->
+
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col ms-2">
 
                         <h3 class="text-gray-500 font-medium text-[15px]">Mohamed Ali</h3>
 
@@ -263,22 +267,23 @@
                 <LightButtonIcon icon='pi-share-alt' size='sm' class='mr-1' color='accent' />
             </template>
         </Table>
-        <div class="flex  justify-end mt-3">
-            <!-- <Pagination :links = "links"/> -->
 
-            <nav v-if="links.length > 3">
-            <ul class="inline-flex  -space-x-px text-base h-10">
-                <template v-for="(link,index) in links" :key="index">
-                <div v-if="link.url === null" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 border border-e-0  rounded-s-lg hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" v-html="link.label"></div>
-                <a v-else class="flex items-center justify-center shadow-sm  px-3 h-8 leading-tight text-gray-500 border  " :class="{ 'rounded-l-lg': index === 0, 'rounded-r-lg': index === links.length - 1, 'bg-gray-200 text-gray-500': link.active }" :href="link.url">
-                    <span v-if="index === 0"><i class="pi pi-angle-left mt-1 me-1 text-sm"></i> </span>
-                    <span v-html="link.label"></span>
-                    <span v-if="index === links.length - 1"><i class="pi pi-angle-double-right text-sm mt-1 ms-2 "></i></span>
-                </a>
-                </template>
-            </ul>
-            </nav>
-        </div>
+        <!-- pagination -->
+            <div class="flex  justify-end mt-3">
+                <nav v-if="links.length > 3">
+                <ul class="inline-flex  -space-x-px text-base h-10">
+                    <template v-for="(link,index) in links" :key="index">
+                    <div v-if="link.url === null" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 border border-e-0  rounded-s-lg hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" v-html="link.label"></div>
+                    <a v-else class="flex items-center justify-center shadow-sm  px-3 h-8 leading-tight text-gray-500 border  " :class="{ 'rounded-l-lg': index === 0, 'rounded-r-lg': index === links.length - 1, 'bg-gray-200 text-gray-500': link.active }" :href="link.url">
+                        <span v-if="index === 0"><i class="pi pi-angle-left mt-1 me-1 text-sm"></i> </span>
+                        <span v-html="link.label"></span>
+                        <span v-if="index === links.length - 1"><i class="pi pi-angle-double-right text-sm mt-1 ms-2 "></i></span>
+                    </a>
+                    </template>
+                </ul>
+                </nav>
+            </div>
+        <!-- pagination -->
     </AuthLayout>
 </template>
 
