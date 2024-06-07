@@ -2,7 +2,7 @@
 
 <template>
 
-    <aside id="logo-sidebar" class="h-full lg:flex" aria-label="Sidebar">
+    <aside id="logo-sidebar" class=" h-screen lg:h-full lg:flex" aria-label="Sidebar">
 
 
        
@@ -22,7 +22,7 @@
                         <div class="flex-1 w-max"></div>
 
 
-                        <div class="flex-none content-center py-3">
+                        <div class="flex-none content-center py-11 lg:py-1">
 
                             <footer>
                                 <slot name="bottom"></slot>

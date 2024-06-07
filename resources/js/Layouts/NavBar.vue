@@ -79,9 +79,6 @@
 
     };
 
-    const chevronClass = computed(() => {
-      return isProfile.value ? ' pi pi-angle-up   ' : '   pi pi-angle-down ';
-    });
 </script>
 <template>
     <nav

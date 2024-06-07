@@ -5,6 +5,8 @@ Text,
 Title,
 TextInput,
 GroupInput,
+Link,
+ButtonLink,
 Button
 } from 'vue-component-cua'
 import GuestLayout from '@/Layouts/GuestLayout.vue'
@@ -42,9 +44,13 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
         <template #footer>
             
-            <Text fontSize="sm"  class=" mt-2  break-words " >
-                Plus d information ? <span class="text-primary">Visit Website.</span>
+            <Text fontSize="sm"  class="  break-words " >
+                Plus d information ? 
+                <Link class='' to='https://fr-fr.facebook.com/' target='_blank'>
+                    <ButtonLink class="text-primary">Renvoyer à nouveau.</ButtonLink>
+                </Link>  
             </Text>
+           
             
         </template>
     </Card>

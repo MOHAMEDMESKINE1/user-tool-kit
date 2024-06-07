@@ -8,7 +8,9 @@
         Card,
         Text,
         Title,
-        Otp
+        Otp,
+        Link,
+        ButtonLink
 
     } from 'vue-component-cua'
     import GuestLayout from '@/Layouts/GuestLayout.vue'
@@ -42,7 +44,10 @@
 
                 <template #footer>
                     <Text fontSize="sm" class="mt-4">
-                        Vous ne recevez pas de code OTP ? <span class="text-primary">Renvoyer à nouveau.</span>
+                        Vous ne recevez pas de code OTP ? 
+                        <Link class='' to='https://fr-fr.facebook.com/' target='_blank'>
+                            <ButtonLink class="text-primary">Renvoyer à nouveau.</ButtonLink>
+                        </Link>  
                     </Text>
                 </template>
             </Card>
