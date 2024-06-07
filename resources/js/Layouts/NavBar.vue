@@ -78,7 +78,6 @@
         isNotif.value = false;
 
     };
-
 </script>
 <template>
     <nav
@@ -124,38 +123,23 @@
                         <div v-if="isLang" class="" v-click-away="handleLangClickisAway">
 
                             <div
-                                class=" z-10 absolute top-20 end-48  bg-white divide-y divide-gray-100 rounded-lg border w-36 dark:bg-gray-700 dark:divide-gray-600">
-                                <div class="text-sm font-semibold text-gray-700 dark:text-gray-200">
+                                class="z-10 absolute top-20 end-48 bg-white truncate  divide-gray-100 rounded-lg shadow w-[200px] dark:bg-gray-700 dark:divide-gray-600 ">
+                                <div
+                                    class="my-2 flex mx-2 py-2 px-3 cursor-pointer text-gray-600 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                                    <svg width="20" height="20"  fill="#6B7280"  class="mt-1"  xmlns="http://www.w3.org/2000/svg" id="mdi-abjad-arabic" viewBox="0 0 24 24"><path d="M12 4C10.08 4 8.5 5.58 8.5 7.5C8.5 8.43 8.88 9.28 9.5 9.91C7.97 10.91 7 12.62 7 14.5C7 17.53 9.47 20 12.5 20C14.26 20 16 19.54 17.5 18.66L16.5 16.93C15.28 17.63 13.9 18 12.5 18C10.56 18 9 16.45 9 14.5C9 12.91 10.06 11.53 11.59 11.12L16.8 9.72L16.28 7.79L11.83 9C11.08 8.9 10.5 8.28 10.5 7.5C10.5 6.66 11.16 6 12 6C12.26 6 12.5 6.07 12.75 6.2L13.75 4.47C13.22 4.16 12.61 4 12 4Z" /></svg>
 
-
-                                    <div>
-                                        <a href="#"
-                                            class="px-2 flex group py-2 focus:bg-language hover:bg-language hover:bg-opacity-15   focus:bg-opacity-15 rounded-t-lg  dark:hover:bg-gray-600 dark:hover:text-white">
-                                            <div
-                                                class="h-5 w-5  rounded-md  group-hover:bg-green-700  group-focus:bg-green-700 group-focus:text-white group-hover:text-white text-gray-600 bg-gray-200  ">
-                                                <span class="flex justify-center ">ع</span>
-                                            </div>
-                                            <span class="px-2">الـعـربــية</span>
-                                        </a>
-                                    </div>
-
-                                    <div>
-                                        <a href="#"
-                                            class="px-2 flex group py-2 focus:bg-language hover:bg-language hover:bg-opacity-15   focus:bg-opacity-15 rounded-b-lg  dark:hover:bg-gray-600 dark:hover:text-white">
-                                            <div
-                                                class="h-5 w-5  rounded-md  group-hover:bg-primary  group-focus:bg-primary group-focus:text-white group-hover:text-white text-gray-600 bg-gray-200    ">
-                                                <span class="flex justify-center">Fr</span>
-                                            </div>
-                                            <span class="px-2 ">Français</span>
-                                        </a>
-
-                                    </div>
-
-
+                                    <a href="#"
+                                        class="ps-3 text-sm  mt-1 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">الـعـربــية</a>
                                 </div>
 
-                            </div>
 
+                                <div class="my-2 mx-2 py-2 px-3  flex   cursor-pointer text-gray-600 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                                    <svg  width="20" height="20"  fill="#6B7280" class="mt-1" xmlns="http://www.w3.org/2000/svg" id="mdi-alphabet-latin" viewBox="0 0 24 24"><path d="M13 6V18H15V17.31C15.37 17.73 15.9 18 16.5 18H17C18.65 18 20 16.65 20 15V12C20 10.36 18.65 9 17 9H16.5C15.9 9 15.37 9.27 15 9.7V6M5 9V11H8C8.57 11 9 11.43 9 12H7C5.36 12 4 13.36 4 15C4 16.65 5.36 18 7 18H11V12C11 10.36 9.65 9 8 9M16 11H17C17.57 11 18 11.43 18 12V15C18 15.57 17.57 16 17 16H16C15.43 16 15 15.57 15 15V12C15 11.43 15.43 11 16 11M7 14H9V16H7C6.43 16 6 15.57 6 15C6 14.43 6.43 14 7 14Z" /></svg>
+                                    <a href="#" class="ps-3  text-sm mt-1  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Français</a>
+                                </div>
+
+
+                            </div>
                         </div>
                     </Transition>
                 </div>
@@ -402,13 +386,12 @@
 
 
                 <!-- profile -->
-                <div class="flex ps-2 pe-2  cursor-pointer "  @click="isProfileClick">
+                <div class="flex ps-2 pe-2  cursor-pointer " @click="isProfileClick">
 
                     <div
-                   
                         class="relative  flex rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <img class="h-auto w-10 rounded-md"
-                        src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
                             alt="">
                         <span
                             class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
@@ -416,79 +399,74 @@
 
                 </div>
 
-                <div @click="isProfileClick"  class=" flex-col hidden cursor-pointer lg:flex justify-center ">
+                <div @click="isProfileClick" class=" flex-col hidden cursor-pointer lg:flex justify-center ">
 
-                 
+
                 </div>
 
 
                 <Transition name="fade">
-                    <div
-                        v-if="isProfile"
-                        v-click-away="handleProfileClicksAway"
-                    class="z-10 absolute top-20 bg-white truncate end-12 lg:end-5  divide-gray-100 rounded-lg shadow w-[224px] dark:bg-gray-700 dark:divide-gray-600">
+                    <div v-if="isProfile" v-click-away="handleProfileClicksAway"
+                        class=" z-10 absolute top-20  bg-white truncate  divide-gray-100 rounded-lg shadow w-[224px] dark:bg-gray-700 dark:divide-gray-600 ">
+                        <div class="flex w-full items-center pt-2 ">
 
+                            <div class="flex ps-2 pe-2">
 
-                    <div class="flex w-full items-center  py-3">
+                                <div
+                                    class="relative  rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                    <img class="h-auto w-10 rounded-md"
+                                        src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+                                        alt="">
+                                    <span
+                                        class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
 
-                        <div class="flex ps-2 pe-2">
+                            </div>
+                            <div class="flex flex-col">
 
-                            <div
-                                class="relative  rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                                <img class="h-auto w-10 rounded-md"
-                                    src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-                                    alt="">
-                                <span
-                                    class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                <h3 class="text-gray-500 font-medium text-[15px]">Mohamed Ali</h3>
+
+                                <h3 class="text-gray-400 font-medium text-[12px]">m.ali@company.ma</h3>
+
                             </div>
 
                         </div>
-                        <div class="flex flex-col">
 
-                            <h3 class="text-gray-500 font-medium text-[15px]">Mohamed Ali</h3>
 
-                            <h3 class="text-gray-400 font-medium text-[12px]">m.ali@company.ma</h3>
+                        <div class="flex h-px my-2  w-full bg-gray-200 dark:bg-gray-700"></div>
 
+
+                        <div
+                            class="my-2 mx-2 py-2 px-3 cursor-pointer text-gray-600 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                            <i class="fa-solid fa-gear"></i>
+                            <a href="#"
+                                class="ps-3 text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Account
+                                settings</a>
                         </div>
 
+
+                        <div
+                            class="my-2 mx-2 py-2 px-3   cursor-pointer text-gray-600 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                            <i class="fa-solid fa-folder"></i>
+                            <a href="#"
+                                class="ps-3  text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Workspace</a>
+                        </div>
+
+
+                        <div class="flex h-px my-2  w-full bg-gray-200 dark:bg-gray-700"></div>
+                        <div
+                            class="my-2 mx-2 py-2  cursor-pointer px-3 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg dark:text-gray-200 dark:hover:text-white text-gray-600">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a href="#"
+                                class="ps-3 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </div>
                     </div>
-
-
-                    <div class="flex h-px  w-full bg-gray-200 dark:bg-gray-700"></div>
-
-
-                    <div
-                        class="my-1 mx-1 py-3 px-4  text-gray-600 bg-gray-100  rounded-xl  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                        <i class="fa-solid fa-gear"></i>
-                        <a href="#"
-                            class="ps-3 text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Account
-                            settings</a>
-                    </div>
-
-
-                    <div
-                        class="my-1 mx-1 py-3 px-4  text-gray-600 hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                        <i class="fa-solid fa-folder"></i>
-                        <a href="#"
-                            class="ps-3  text-sm  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Workspace</a>
-                    </div>
-
-
-                    <div class="flex h-px  w-full bg-gray-200 dark:bg-gray-700"></div>
-                    <div
-                        class="my-1 mx-1 py-3 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 rounded-xl dark:text-gray-200 dark:hover:text-white text-gray-600">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <a href="#"
-                            class="ps-3 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                            out</a>
-                    </div>
-                    </div>
-
                 </Transition>
                 <!--  profile   -->
             </div>
 
-           
+
         </div>
 
     </nav>

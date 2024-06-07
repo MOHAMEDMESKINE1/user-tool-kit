@@ -232,7 +232,7 @@
                                 src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
                                 alt=""/>
                         </div>
-
+                        
                         <!-- <div
                             class=" relative     text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <Avatar  text="MESKINE MOHAMED " rounded="full" class="h-10  w-10 " />

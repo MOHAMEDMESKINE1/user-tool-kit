@@ -17,7 +17,7 @@ const remember = ref(false);
 </script>
 
 <template>
-<GuestLayout>
+<div>
     <div class="dark:bg-black dark:text-white ">
     <section class="min-h-screen content-center   text-success dark:bg-gray-900">
 
@@ -149,7 +149,7 @@ const remember = ref(false);
        
     </section>
 </div>
-</GuestLayout>
+</div>
 
 </template>
 
