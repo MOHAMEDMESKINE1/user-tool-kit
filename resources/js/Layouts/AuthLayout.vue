@@ -2,8 +2,7 @@
     import Tools from '@/Components/Tools/Tools.vue'
     import SideBar from './SideBar/SideBar.vue';
     import NavBar from './NavBar.vue';
-    import Button from "primevue/button"
-    import Banner from '@/Pages/Banner.vue';
+    import {Banner,ButtonLink} from  'vue-component-cua'
 
     import {
         ref
@@ -29,7 +28,12 @@
     <div class="h-screen flex flex-col">
 
  
-    <Banner text="Activer la sécurité Nécessaire" class="flex-none"/>
+    <!-- <Banner text="Activer la sécurité Nécessaire" class="flex-none"/> -->
+
+    <Banner  color='success' >
+        <i class='text-xs pi pi-bell'></i>
+        <span class='text-xs flex items-center font-normal dark:bg-gray-900 mx-2'>Activer la sécurité Nécessair <ButtonLink class='flex items-center ms-1' size='xs' color='secondary' >Learn More</ButtonLink>  </span>
+    </Banner>
     <section class="flex flex-1 bg-gray-50   overflow-hidden dark:bg-gray-900 start-0 pe-[70px]  relative ">
         
        

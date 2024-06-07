@@ -144,9 +144,9 @@
         "gender": "Female",
         "ip_address": "180.66.162.255"
     }]);
-    const links = [{
+    const links =ref([{
 
-        label: 'Previous',
+        label: 'Précédente',
         url: '/page',
         active: false,
         },
@@ -170,12 +170,12 @@
         },
         {
 
-        label: 'Next',
+        label: 'Suivante',
         url: '/page/3',
         active: false,
         },
 
-];
+    ])
 </script>
 <template>
     <AuthLayout>
@@ -192,8 +192,7 @@
                 <BreadCrumbItem title='Utilsateurs' href='/' :last="true" />
             </BreadCrumb>
         </div>
-        <Table :headers='headers' :data='data' :checkable='true' @onSelect='selectItems'
-            @onSearch='search'>
+        <Table :headers='headers' :data='data' :checkable='true' @onSelect='selectItems'  @onSearch='search'>
             <template #actions>
                 <LightButtonIcon icon='pi-trash' class='mr-1 ml-2' color='error' @click='confirmDelete' />
                 <LightButtonIcon icon='pi-pencil' class='mr-1' color='primary' />
@@ -228,7 +227,7 @@
 
                         <div
                             class="relative  rounded-lg bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <img class="h-auto w-10 rounded-lg"
+                            <img class="h-auto  w-10 rounded-lg"
                                 src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
                                 alt="">
                             <span
@@ -269,18 +268,12 @@
 
             <nav v-if="links.length > 3">
             <ul class="inline-flex  -space-x-px text-base h-10">
-                <template v-for="(link, k) in links" :key="k">
-                <div v-if="link.url === null" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 border border-e-0 border-gray-300 rounded-s-lg hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" v-html="link.label"></div>
-                <a v-else class="flex items-center justify-center shadow-sm
-                
-                
-                
-                
-                
-                px-3 h-8 leading-tight text-gray-500 border border-gray-300 " :class="{ 'rounded-l-lg': k === 0, 'rounded-r-lg': k === links.length - 1, 'bg-gray-300 text-gray-500': link.active }" :href="link.url">
-                    <span v-if="k === 0"><i class="pi pi-angle-left mt-1 me-1 text-sm"></i> </span>
+                <template v-for="(link,index) in links" :key="index">
+                <div v-if="link.url === null" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 border border-e-0  rounded-s-lg hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" v-html="link.label"></div>
+                <a v-else class="flex items-center justify-center shadow-sm  px-3 h-8 leading-tight text-gray-500 border  " :class="{ 'rounded-l-lg': index === 0, 'rounded-r-lg': index === links.length - 1, 'bg-gray-200 text-gray-500': link.active }" :href="link.url">
+                    <span v-if="index === 0"><i class="pi pi-angle-left mt-1 me-1 text-sm"></i> </span>
                     <span v-html="link.label"></span>
-                    <span v-if="k === links.length - 1"><i class="pi pi-angle-double-right text-sm mt-1 ms-2 "></i></span>
+                    <span v-if="index === links.length - 1"><i class="pi pi-angle-double-right text-sm mt-1 ms-2 "></i></span>
                 </a>
                 </template>
             </ul>
